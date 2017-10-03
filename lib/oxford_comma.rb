@@ -10,7 +10,7 @@ def oxford_comma(array)
         if index != array.length - 1
           endreturn_string << fruit + ', '
         else
-          endreturn_string << 'and ' + fruit
+          return_string << 'and ' + fruit
       end
     end
     return return_string
