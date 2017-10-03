@@ -7,7 +7,11 @@ def oxford_comma(array)
     return array.join(' and ')
   else
     array.each_with_index do |fruit,index|
-      return_string << fruit + ', '
+      while index != array.length - 1 do
+        return_string << fruit + ', '
+      end
+      return_string << ',and ' + array.last
     end
+    return return_string
   end
 end
